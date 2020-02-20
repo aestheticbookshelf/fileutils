@@ -1,0 +1,10 @@
+const fu = require('./src/fileutils')
+
+fu.createDir("testdir/foo")
+fu.writeFile("testdir/foo/bar", "baz")
+fu.writeFile("testdir/foo/bar", "bazmod")
+fu.writeFile("testdir/foo/bar", "bazmodmod", fu.DONT_OVERWRITE)
+console.log(fu.readFile("testdir/foo/bar"))
+let json = fu.readJson("testdir/foo.json", {foo: "bar"})
+fu.writeJson("testdir/foo.json", json)
+fu.removeDir("testdir")
