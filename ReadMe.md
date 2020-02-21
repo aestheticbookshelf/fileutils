@@ -23,7 +23,7 @@ let content = fu.readFile("foo.txt", "default text in case foo.txt is missing")
 
 fu.writeFile("foo.txt", "some content")
 
-// write file, but don't overwrite it exists
+// write file, but don't overwrite if it exists
 
 fu.writeFile("foo.txt", "some content", fu.DONT_OVERWRITE)
 
