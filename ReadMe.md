@@ -4,7 +4,7 @@ Fileutils is the no nonsense synchronous file utility package you have always dr
 
 ## Usage
 
-```Javascript
+```javascript
 const fu = require('@aestheticbookshelf/fileutils')
 
 // create directory, won't complain if it already exists, creates all directories in path
