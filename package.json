@@ -1,6 +1,6 @@
 {
   "name": "@aestheticbookshelf/fileutils",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "File utils.",
   "main": "src/fileutils.js",
   "scripts": {
