@@ -17,7 +17,7 @@ fu.removeDir("foo")
 
 // read file, with default
 
-let content = fu.readFile("foo.txt", "default text in case foo.txt is missing)
+let content = fu.readFile("foo.txt", "default text in case foo.txt is missing")
 
 // write file
 
