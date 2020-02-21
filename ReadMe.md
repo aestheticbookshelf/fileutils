@@ -1,6 +1,6 @@
 # fileutils
 
-Fileutils is no nonsense synchronous file utility package you have always dreamed of. It is built on proven packages ( `copy-dir`, `mkdirp`, `rimraf` ) and brings together their functionality in a coherent way. Plus adds synchronous JSON read from file with default object and JSON write to file, which you cannot achieve with `json-file`.
+Fileutils is the no nonsense synchronous file utility package you have always dreamed of. It is built on proven packages ( `copy-dir`, `mkdirp`, `rimraf` ) and brings together their functionality in a coherent way. Plus adds synchronous JSON read from file with default object and JSON write to file, which you cannot achieve with `json-file`.
 
 ## Usage
 
@@ -29,7 +29,7 @@ fu.writeFile("foo.txt", "some content", fu.DONT_OVERWRITE)
 
 // read JSON with default
 
-fu.readJson("foo.json", {
+let obj = fu.readJson("foo.json", {
     meta: "I'm a default object to return in case foo.json does not exist"
 })
 
