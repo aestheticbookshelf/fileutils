@@ -1,6 +1,6 @@
 {
   "name": "@aestheticbookshelf/fileutils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "File utils.",
   "main": "src/fileutils.js",
   "scripts": {
@@ -22,6 +22,7 @@
     "url": "https://github.com/aestheticbookshelf/fileutils.git"
   },
   "dependencies": {
+    "copy-dir": "^1.2.0",
     "mkdirp": "^1.0.3",
     "rimraf": "^3.0.2"
   }

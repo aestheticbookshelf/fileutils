@@ -1,6 +1,7 @@
 const fs = require('fs')
 const mkdirp = require('mkdirp')
 const rimraf = require('rimraf')
+const copydir = require('copy-dir')
 
 const DONT_OVERWRITE = true
 
@@ -46,6 +47,10 @@ function writeJson(path, obj){
     }
 }
 
+function copyDir(from, to){
+    copydir.sync(from, to)
+}
+
 module.exports = {
     createDir: createDir,
     removeDir: removeDir,
@@ -53,5 +58,6 @@ module.exports = {
     writeFile: writeFile,
     readJson: readJson,
     writeJson: writeJson,
-    DONT_OVERWRITE: DONT_OVERWRITE
+    DONT_OVERWRITE: DONT_OVERWRITE,
+    copyDir: copyDir
 }
