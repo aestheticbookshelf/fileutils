@@ -1,14 +1,23 @@
 {
   "name": "@aestheticbookshelf/fileutils",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "File utils.",
   "main": "src/fileutils.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
+  "keywords": [  
     "file",
-    "utils"
+    "utils",
+	"synchronous",
+	"create",
+	"copy",
+	"remove",
+	"delete",	
+	"recursive",
+	"directory",
+	"folder",
+	"json"		
   ],
   "author": "aestheticbookshelf",
   "license": "MIT",
